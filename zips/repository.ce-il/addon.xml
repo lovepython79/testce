@@ -3,7 +3,7 @@
     provider-name="coreELEC-IL">
     <extension point="xbmc.addon.repository" name="coreELEC-IL Repository">
         <dir>
-    <info compressed="false">https://raw.githubusercontent.com/lovepython79/coreelec-il/main/addons.xml</info>
+    <info compressed="false">https://raw.githubusercontent.com/lovepython79/coreelec-il/main/zips/addons.xml</info>
     <checksum>https://raw.githubusercontent.com/lovepython79/coreelec-il/main/addons.xml.md5</checksum>
     <datadir zip="true">https://raw.githubusercontent.com/lovepython79/coreelec-il/main/zips/repository.ce-il/repository.ce-il-1.0.1.zip</datadir>
 </dir>
