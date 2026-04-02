@@ -60,7 +60,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.autocompletion-ce.il" name="AutoCompletion library [CoreELEC-IL] (lovepython79)"
+<addon id="script.module.autocompletion.ce.il" name="AutoCompletion library [CoreELEC-IL] (lovepython79)"
     version="3.0.0" provider-name="Philipp Temminghoff (phil65), (lovepython79) - [CoreELEC-IL]">
     <requires>
         <!--[coreELEC-IL]-->
