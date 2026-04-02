@@ -1,160 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.ce-il" name="coreELEC-IL Repository" version="1.0.1"
-    provider-name="coreELEC-IL">
-    <extension point="xbmc.addon.repository" name="coreELEC-IL Repository">
-        <dir>
-    <info compressed="false">https://raw.githubusercontent.com/lovepython79/coreelec-il/main/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/lovepython79/coreelec-il/main/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/lovepython79/coreelec-il/main/zips</datadir>
-</dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">The Official coreELEC-IL Community Repository</summary>
-        <description lang="en_GB">Install addons from coreELEC-IL</description>
-        <summary lang="he_IL">המאגר הרשמי של קהילת coreELEC-IL</summary>
-        <description lang="he_IL">התקנת הרחבות מבית coreELEC-IL</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
+    <addon id="repository.ce-il" name="coreELEC-IL Repository" version="1.0.1" provider-name="coreELEC-IL">
+        <extension point="xbmc.addon.repository" name="coreELEC-IL Repository">
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/lovepython79/coreelec-il/main/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/lovepython79/coreelec-il/main/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/lovepython79/coreelec-il/main/zips</datadir>
+            </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">The Official coreELEC-IL Community Repository</summary>
+            <description lang="en_GB">Install addons from coreELEC-IL</description>
+            <summary lang="he_IL">המאגר הרשמי של קהילת coreELEC-IL</summary>
+            <description lang="he_IL">התקנת הרחבות מבית coreELEC-IL</description>
+            <platform>all</platform>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.autocompletion.ce-il"
-    name="AutoCompletion for virtual keyboard (Hebrew) [coreELEC-IL]" version="3.0.0"
-    provider-name="Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn,(lovepython79) - [coreELEC-IL]">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.autocompletion.ce-il" version="3.0.0" />
-    </requires>
-    <extension point="xbmc.python.script" library="plugin.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">AutoCompletion for the virtual keyboard (coreELEC-IL Edition)</summary>
-        <description lang="en_GB">
-            AutoCompletion for the virtual keyboard. Optimized for the [coreELEC-IL] community with
-            Hebrew RTL support.
-            Original Authors: Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn.
-            Hebrew RTL fix and maintenance by (lovepython79) for the [coreELEC-IL] community.
-        </description>
+    <addon id="plugin.program.autocompletion.ce-il" name="AutoCompletion for virtual keyboard (Hebrew) [coreELEC-IL]" version="3.0.0" provider-name="coreELEC-IL">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0" />
+            <import addon="script.module.autocompletion.ce-il" version="3.0.0" />
+        </requires>
+        <extension point="xbmc.python.script" library="plugin.py">
+            <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="he_IL">השלמה אוטומטית למקלדת (גרסת coreELEC-IL)</summary>
+            <description lang="he_IL">השלמה אוטומטית למקלדת הווירטואלית עם תיקון מובנה לבעיית היפוך האותיות (RTL) בחיפוש בעברית.</description>
+            <news lang="he_IL">[v3.0.0] הסבה מלאה ל-Python 3, תמיכה ב-Kodi 21 ותיקוני RTL לעברית.</news>
+            <platform>all</platform>
+            <license>GPL-2.0-or-later</license>
+            <source>https://github.com/lovepython79/coreelec-il</source>
+            <assets>
+                <icon>resources/icon.png</icon>
+                <screenshot>resources/screenshot-01.jpg</screenshot>
+            </assets>
+        </extension>
+    </addon>
 
-        <summary lang="he_IL">השלמה אוטומטית למקלדת (גרסת coreELEC-IL) (lovepython79)</summary>
-        <description lang="he_IL">
-            השלמה אוטומטית למקלדת הווירטואלית.
-            גרסה זו מותאמת למשתמשי [coreELEC-IL] וכוללת תיקון מובנה לבעיית היפוך האותיות (RTL)
-            בתוצאות החיפוש בעברית.
-            יוצרים מקוריים: Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn.
-            תיקון עברית ותחזוקה: (lovepython79) עבור קהילת [coreELEC-IL].
-        </description>
-        <news lang="en_GB">
-[v3.0.0] - New Improved Version (CoreELEC-IL)
-- [Development] Full migration and rewrite from Python 2 to Python 3: Full support for Kodi 19/20/21 and above.
-- [Hardware Testing] System tested and verified on Homatics Box R 4K Plus under CoreELEC NG version.
-- [Compatibility] Full stability: Fixed data type conversion to Integer to prevent Python 3 runtime errors.
-- [User Experience] Manual language setting removed: Google API search language is hardcoded to Hebrew.
-- [Encoding] Full module upgrade to UTF-8 to ensure code integrity and prevent errors.
-- [RTL] Implemented smart text reversal logic for Hebrew characters (Unicode range: \u0590-\u05FF).
-- [Stability] Upgraded termination and folder closure logic to prevent errors in the system log.
-- [Performance] Optimized Busy Dialog unlock during keyboard activation for instant responsiveness.
-- [Logic] Autocomplete engine rewrite: Fundamental script logic changes for optimal performance.
-- [Speed] Requests infrastructure upgrade: Replaced original request mechanism with a significantly faster system.
-- [Optimization] Improved TMDB data retrieval and advanced Unicode handling.
-- [Stability] Added 10s timeout and advanced error management to prevent UI freezes.
-- [Interface] Full RTL (Right-to-Left) support and optimized process termination logic (sys.argv).
----
-
-Previous Versions History: (Original Developer - Philipp Temminghoff):
-1.1.2
-move some stuff out of this lib (to the places they belong to)
-1.1.1
-fix wrong reference to extendedinfo script
-1.1.0
-No results when keyboard with hidden input is active
-big code rework
-added bing as provider
-fixed localdict provider
-1.0.0
-Initial release
-        </news>
-        <news lang="he_IL">
-[v3.0.0] - גרסה חדשה ומשופרת (CoreELEC-IL)
-- [פיתוח] הסבה מלאה ושכתוב הקוד מ-Python 2 ל-Python 3: תמיכה מלאה ב-Kodi 19/20/21 ומעלה.
-- [בדיקות חומרה] המערכת נבדקה ואומתה על סטרימר Homatics Box R 4K Plus תחת CoreELEC גרסת NG.
-- [תאימות] יציבות מלאה: המרה ותיקון סוג נתונים למספר שלם (Integer) למניעת שגיאות הרצה בסביבת Python 3.
-- [חוויית משתמש] ביטול הצורך בהגדרת שפה ידנית: שפת החיפוש (Google API) הוגדרה כעברית מובנית בקוד.
-- [קידוד] שדרוג כלל המודול ל-UTF-8 מלא לשמירה על תקינות הקוד ומניעת שגיאות.
-- [RTL] הטמעת לוגיקת היפוך טקסט חכמה עבור תווים בעברית (טווח Unicode: \u0590-\u05FF).
-- [יציבות] שדרוג לוגיקת סיום תהליך וסגירת תיקיות למניעת שגיאות ביומן המערכת (Log).
-- [ביצועים] אופטימיזציה לביטול נעילת חלונית ההמתנה (Busy Dialog) בזמן הפעלת המקלדת.
-- [לוגיקה] שכתוב מנוע ה-Autocomplete: שינוי יסודי בלוגיקת הסקריפט לביצועים אופטימליים.
-- [מהירות] שדרוג תשתית ה-Requests: החלפת מנגנון הבקשות המקורי במערכת מהירה ותגובתית משמעותית.
-- [אופטימיזציה] שיפור שליפת נתונים מ-TMDB וטיפול מתקדם בקידוד Unicode.
-- [יציבות] הוספת Timeout של 10 שניות וניהול שגיאות מתקדם למניעת תקיעות בממשק המשתמש.
-- [ממשק] התאמה מלאה ל-RTL (מימין לשמאל) ושיפור לוגיקת סיום תהליך (sys.argv).
----
-היסטוריית גרסאות מקוריות (מפתח מקורי - Philipp Temminghoff):
-
-1.1.2
-- העברת קבצים למקומות המתאימים להם בספריה.
-
-1.1.1
-- תיקון הפניה שגויה לסקריפט extendedinfo.
-
-1.1.0
-- אין תוצאות כאשר המקלדת עם קלט מוסתר פעילה.
-- עבודה מחדש על מבנה הקוד (Big code rework).
-- הוספת מנוע חיפוש Bing כספק תוצאות.
-- תיקון ספק התוצאות המקומי (localdict).
-        </news>
-
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/lovepython79/coreelec-il</source>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <screenshot>resources/screenshot-01.jpg</screenshot>
-            <screenshot>resources/screenshot-02.jpg</screenshot>
-            <screenshot>resources/screenshot-03.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="script.module.autocompletion.ce-il" name="AutoCompletion library [CoreELEC-IL] (lovepython79)"
-    version="3.0.0" provider-name="Philipp Temminghoff (phil65), (lovepython79) - [CoreELEC-IL]">
-    <requires>
-        <!--[coreELEC-IL]-->
-        <!--Removed unused import -->
-        <!--Previous version: 2.24.0-->
-        <import addon="xbmc.python" version="3.0.0" />
-        <!--Previous version: 2.9.1 -->
-        <import addon="script.module.requests" version="2.31.0" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Module providing AutoCompletion functions (CoreELEC-IL Edition)</summary>
-        <description lang="en_GB">
-            Module providing AutoCompletion functions for Kodi keyboards.
-            Original Author: Philipp Temminghoff (phil65).
-            Modified with Hebrew RTL support and maintained by (lovepython79) for the [CoreELEC-IL]
-            community.
-        </description>
-        <summary lang="he_IL">מודול השלמה אוטומטית [CoreELEC-IL] (lovepython79)</summary>
-        <description lang="he_IL">
-            מודול המספק פונקציות להשלמה אוטומטית במקלדות של קודי.
-            יוצר מקורי: Philipp Temminghoff (phil65).
-            גרסה זו כוללת תיקון RTL (היפוך טקסט) לעברית ותחזוקה על ידי (lovepython79) עבור קהילת
-            [CoreELEC-IL].
-        </description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/lovepython79/coreelec-il</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
+    <addon id="script.module.autocompletion.ce-il" name="AutoCompletion library [CoreELEC-IL]" version="3.0.0" provider-name="coreELEC-IL">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0" />
+            <import addon="script.module.requests" version="2.31.0" />
+        </requires>
+        <extension point="xbmc.python.module" library="lib" />
+        <extension point="xbmc.addon.metadata">
+            <summary lang="he_IL">מודול השלמה אוטומטית [CoreELEC-IL]</summary>
+            <description lang="he_IL">מודול המספק פונקציות להשלמה אוטומטית במקלדות של קודי עם תמיכה ב-RTL.</description>
+            <platform>all</platform>
+            <license>GPL-2.0-or-later</license>
+            <source>https://github.com/lovepython79/coreelec-il</source>
+            <assets>
+                <icon>icon.png</icon>
+            </assets>
+        </extension>
+    </addon>
 </addons>
